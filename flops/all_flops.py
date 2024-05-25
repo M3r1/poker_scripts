@@ -1,6 +1,6 @@
 from itertools import combinations
 
-import hands
+import combos.hands as hands
 
 def get_all_flops_tuple_list():
     return list(combinations(hands.get_deck(), 3))

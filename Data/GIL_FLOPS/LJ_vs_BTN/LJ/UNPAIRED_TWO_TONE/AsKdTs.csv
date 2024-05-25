@@ -1,0 +1,12 @@
+Hand Category,Bet 33% Pot Combos,Check Combos
+straight,"oQJ,QcJc,QdJd,QsJs","QhJh"
+set,"aKK,aTT,AcAh,AcAd","AdAh"
+two pair,"aAK,aKT,oAT,AcTc,AdTd","AhTh"
+top pair,"sAJ,sA2,sA3,sA4,sA5,sA6,sA7,sA8,sA9,aAQ","oAJ"
+middle pair,"aKJ,aKQ,Ks5s,Ks6s,Ks7s,Ks8s,Ks9s","Kc5c,Kh5h,Kc6c,Kh6h,Kc7c,Kh7h,Kc8c,Kh8h,Kc9c,Kh9h"
+weak pair,"aJJ,aQT,aJJ,sJT,sT9,a99,a88,a77,a66,a55,a44,a33,a22","aQQ"
+flush draw (no pair),"Qs8s,9s8s,8s7s,7s6s,5s4s,6s5s","Qs9s"
+gutshot,"Qc9c,Qh9h,Qc8c,Qd8d,Qh8h","Qd9d"
+2crd backdoor flush draw,"","9d8d,8d7d,7d6d,5d4d,6d5d"
+Air,"","9h8h,9c8c,8h7h,8c7c,7h6h,7c6c,5h4h,5c4c,6h5h,6c5c"
+Total,0.82,0.18

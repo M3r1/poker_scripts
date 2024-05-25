@@ -1,11 +1,11 @@
 import os
 import glob
 
-import all_flops
-import flop_filter
-import file_helper
+import flops.all_flops as all_flops
+import flops.flop_filter as flop_filter
+import helpers.file_helper as file_helper
 
-ALL_FLOPS_CSV_FOLDER = "./ALL_FLOPS_CSVs/"
+ALL_FLOPS_CSV_FOLDER = "./DATA/ALL_FLOPS_CSVs/"
 ALL_FLOPS_CSV_FILES = glob.glob(f"./{ALL_FLOPS_CSV_FOLDER}*")
 
 for f in ALL_FLOPS_CSV_FILES:

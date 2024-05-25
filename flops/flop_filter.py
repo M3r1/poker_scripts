@@ -1,6 +1,6 @@
 import random
 
-import flop_category
+import flops.flop_category as flop_category
 
 def get_monotone_flops(all_possible_flops):
     return [flop for flop in all_possible_flops if flop_category.is_monotone(flop)]

@@ -1,10 +1,11 @@
-import file_helper
+import helpers.file_helper as file_helper
 import glob
 import random
 
-PERCENTAGE_FROM_EACH_CATEGORY = "0.4"
-
+PERCENTAGE_FROM_EACH_CATEGORY = "0.25"
 FLOPS_DIR = "./TIPTON_FLOPS/"
+
+
 ALL_FLOPS_CSV_FILES = glob.glob(f"{FLOPS_DIR}*")
 
 for flop_file_path in ALL_FLOPS_CSV_FILES:

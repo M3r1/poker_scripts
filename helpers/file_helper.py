@@ -11,3 +11,13 @@ def get_array_of_file_lines(file):
             arr.append(row.strip())
 
     return arr
+
+def get_csv_matrix(file_path):
+    matrix = []
+
+    with open(file_path, newline='') as csvfile:
+        csvreader = csv.reader(csvfile, delimiter=',')
+        for row in csvreader:
+            matrix.append([value.strip() for value in row])
+
+    return matrix

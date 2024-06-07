@@ -5,7 +5,7 @@ from combos import combo_pool, hands
 def remove_combo_from_range(symbol, hand, player_possilbe_combos, flop_name, flop_cards):
     reverse_hand = f"{hand[2:4]}{hand[0:2]}"
 
-    if symbol[0] not in ANALYZE_SYMBOLS:
+    if symbol[0] not in hands.ANALYZE_SYMBOLS:
         if hand[0:2] in flop_cards or hand[2:4] in flop_cards:
             print(f"{hand} in {flop_name} contains a card that is part of the flop")
             raise Exception()
@@ -18,12 +18,9 @@ def remove_combo_from_range(symbol, hand, player_possilbe_combos, flop_name, flo
         print(f"{hand} in {flop_name} is either not in the player's range or is written twice")
         raise Exception()
 
-ANALYZE_SYMBOLS = ["a", "s", "o"]
-
 PLAYER_RANGE = "[100]AA[/100],[100]AKs[/100],[100]AQs[/100],[100]AJs[/100],[100]ATs[/100],[100]A9s[/100],[100]A8s[/100],[100]A7s[/100],[100]A6s[/100],[100]A5s[/100],[100]A4s[/100],[100]A3s[/100],[100]A2s[/100],[100]AKo[/100],[100]KK[/100],[100]KQs[/100],[100]KJs[/100],[100]KTs[/100],[100]K9s[/100],[100]K8s[/100],[75]K7s[/75],[100]K6s[/100],[81]K5s[/81],[100]AQo[/100],[100]KQo[/100],[100]QQ[/100],[100]QJs[/100],[100]QTs[/100],[100]Q9s[/100],[20]Q8s[/20],[100]AJo[/100],[100]KJo[/100],[67]QJo[/67],[100]JJ[/100],[100]JTs[/100],[100]ATo[/100],[26]KTo[/26],[4]QTo[/4],[100]TT[/100],[23]T9s[/23],[100]99[/100],[10]98s[/10],[100]88[/100],[10]87s[/10],[75]77[/75],[11]76s[/11],[26]66[/26],[18]65s[/18],[16]55[/16],[8]54s[/8],[16]44[/16],[18]33[/18],[17]22[/17]"
-FLOPS_ANALYZED_PATH = './GIL_FLOPS/LJ_vs_BTN/LJ/UNPAIRED_TWO_TONE'
-
 ALL_ANALYSIS_CSV_FOLDER = "./Data/GIL_FLOPS/LJ_vs_BTN/LJ/UNPAIRED_TWO_TONE/"
+
 ALL_ANALYSIS_CSV_FILES = glob.glob(f"{ALL_ANALYSIS_CSV_FOLDER}*")
 
 all_hand_symbols = []
@@ -78,7 +75,7 @@ for flop_hand_symbols_dict in all_hand_symbols:
     player_possilbe_combos = list(combo_pool.build_flat_combo_pool(flat_range))
 
     for symbol in hand_symbols:
-        if symbol[0] not in hands.RANKS and symbol[0] not in ANALYZE_SYMBOLS:
+        if symbol[0] not in hands.RANKS and symbol[0] not in hands.ANALYZE_SYMBOLS:
             print(f"Found a symbol {symbol} that is formatted wrong in {flop_name}")
             raise Exception()
         

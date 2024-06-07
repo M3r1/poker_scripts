@@ -1,4 +1,4 @@
-Hand Category,Bet 50% Pot Combos,Check Combos
+Hand Category,Bet 33% Pot Combos,Check Combos
 set,"a44,a33,JdJh","JcJh,JcJd"
 overpair,"QcQs,QcQd,QcQh","aKK,aAA,QsQh,QhQd,QsQd"
 top pair,"AcJc,KcJc,QcJc,JcTc","oAJ,oKJ,oQJ,AhJh,AdJd,KhJh,KdJd,QhJh,QdJd,JhTh,JdTd"

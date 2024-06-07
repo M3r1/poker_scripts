@@ -1,4 +1,4 @@
-Hand Category,Bet 50% Pot Combos,Check Combos
+Hand Category,Bet 33% Pot Combos,Check Combos
 set,"AsAh,AdAh,a55,a44","AsAd"
 two pair,"sA5,s54","sA4"
 top pair,"aAK","aAQ,aAJ,aAT,sA9,sA8,sA7,sA6,sA3,sA2"

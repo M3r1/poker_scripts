@@ -1,5 +1,7 @@
 from itertools import combinations
 
+ANALYZE_SYMBOLS = ["a", "s", "o"]
+
 RANKS = ['2', '3', '4', '5', '6', '7', '8', '9', 'T', 'J', 'Q', 'K', 'A']
 STRENGTH_DICT = {
     '2': 0,

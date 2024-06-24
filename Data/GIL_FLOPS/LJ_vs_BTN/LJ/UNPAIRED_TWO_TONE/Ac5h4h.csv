@@ -1,13 +1,2 @@
-Hand Category,Bet 33% Pot Combos,Check Combos
-set,"AsAh,AdAh,a55,a44","AsAd"
-two pair,"sA5,s54","sA4"
-top pair,"aAK","aAQ,aAJ,aAT,sA9,sA8,sA7,sA6,sA3,sA2"
-pp < top card,"a66,a77","a88,a99,aTT,aJJ,aQQ,aKK"
-middle pair,"s65,sK5",""
-weak pair,"3s3h,3d3h,3c3h,2c2h,2s2h,2d2h","3s3d,3d3c,3s3c,2d2c,2s2c,2s2d"
-flush draw (no pair),"7h6h,8h7h,Kh6h,Kh7h,Kh8h","KhQh,KhJh,KhTh,QhJh,QhTh,Kh9h,JhTh,Qh8h,Qh9h,Th9h,9h8h"
-oesd,7c6c,"7s6s,7d6d"
-gutshot,"","8c7c,8s7s,8d7d"
-2crd backdoor flush draw,Kc6c,"KcQc,KcJc,KcTc,QcJc,Kc7c,Kc8c,Kc9c,QcTc,Qc8c,JcTc,Qc9c,Tc9c,9c8c"
-Air,"KhQc,KhQs,KhQd,KcQh,KdQh,KsQh","KsQs,KdQd,KcQs,KcQd,KdQc,KsQc,KdQs,KsQd,oKJ,KsJs,KdJd,oKT,KsTs,KdTd,oQJ,QsJs,QdJd,oQT,QdTd,QsTs,Kd6d,Ks6s,Ks7s,Kd7d,Ks8s,Kd8d,Kd9d,Ks9s,Qs8s,Qd8d,JdTd,JsTs,Qd9d,Qs9s,Ts9s,Td9d,9s8s,9d8d"
-Total,0.17,0.83
+Hand Category,33%,50%,Check
+Total,7.5,9.5,83

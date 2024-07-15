@@ -21,8 +21,8 @@ OPEN = "Open"
 #######################
 #######################
 #######################
-SCENARIO = VS_3BET
-HERO = LJ
+SCENARIO = VS_RAISE
+HERO = BB
 VILLAIN = BTN
 ACTION = CALL
 #######################
@@ -73,9 +73,10 @@ get_elements_by_text(all_scenarios_page_elements, HERO)[0].click()
 if VILLAIN != NAN:
     all_scenarios_hero_page_elements = get_all_elements(driver, "class name", "ion-color")
     if SCENARIO == VS_RAISE:
-        get_elements_by_text(all_scenarios_hero_page_elements, VILLAIN)[0].click()
-    else:
         get_elements_by_text(all_scenarios_hero_page_elements, VILLAIN)[1].click()
+    else:
+        print("Gil you need to choose another array index")
+        get_elements_by_text(all_scenarios_hero_page_elements, VILLAIN)[0].click()
 
 all_combos = get_all_elements(driver, "class name", "ion-activatable")
 all_combos_filtered = [combo for combo in all_combos if combo.text != "BUILT-IN" and combo.text != "YOUR RANGES" and combo.text != ""] 

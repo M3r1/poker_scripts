@@ -2,7 +2,7 @@ import glob
 import random
 from helpers import file_helper
 
-ALL_ANALYSIS_CSV_FOLDER = "./Data/GIL_FLOPS/LJ_vs_BTN/LJ/Monotone/"
+ALL_ANALYSIS_CSV_FOLDER = "./Data/GIL_FLOPS/LJ_vs_BTN/LJ/UNPAIRED_RAINBOW/"
 ALL_ANALYSIS_CSV_FILES = glob.glob(f"{ALL_ANALYSIS_CSV_FOLDER}*")
 DRILL_HANDS = False
 
@@ -16,7 +16,6 @@ def verify_user_input(prompt_message, correct_value):
         print(f"Wrong, the answer is: {correct_value}")
         return False
 
-# while True:
 number_of_flops = len(ALL_ANALYSIS_CSV_FILES)
 random_index_options = list(range(number_of_flops))
 

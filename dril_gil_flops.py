@@ -2,7 +2,7 @@ import glob
 import random
 from helpers import file_helper
 
-ALL_ANALYSIS_CSV_FOLDER = "./Data/GIL_FLOPS/LJ_vs_BTN/LJ/UNPAIRED_RAINBOW/"
+ALL_ANALYSIS_CSV_FOLDER = "./Data/GIL_FLOPS/LJ_vs_BB/LJ/UNPAIRED_RAINBOW/"
 ALL_ANALYSIS_CSV_FILES = glob.glob(f"{ALL_ANALYSIS_CSV_FOLDER}*")
 DRILL_HANDS = False
 

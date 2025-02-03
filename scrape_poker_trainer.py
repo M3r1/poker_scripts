@@ -24,10 +24,10 @@ OPEN = "Open"
 #######################
 #######################
 #######################
-SCENARIO = VS_3BET
-HERO = LJ
-VILLAIN = BB
-ACTION = RAISE
+SCENARIO = VS_RAISE
+HERO = BB
+VILLAIN = HJ
+ACTION = CALL
 #######################
 #######################
 #######################
@@ -81,7 +81,8 @@ def get_open_or_vs_raise_flopzilla_range_string(all_landing_page_game_elements, 
 
     if SCENARIO != OPEN:
         all_scenarios_hero_page_elements = get_all_elements(driver, "class name", "ion-color")
-        get_elements_by_text(all_scenarios_hero_page_elements, VILLAIN)[0].click()
+
+        get_elements_by_text(all_scenarios_hero_page_elements, VILLAIN)[-1].click()
 
     all_combos = get_all_elements(driver, "class name", "ion-activatable")
     
